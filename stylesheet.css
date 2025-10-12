@@ -1,0 +1,39 @@
+body {
+  background-color: #f9eddf;
+  font-family: 'Poppins', sans-serif;
+}
+
+.title {
+  font-family: 'Pacifico', cursive;
+  color: #3a2f21;
+  position: relative;
+  display: inline-block;
+}
+
+.title::after {
+  content: '';
+  position: absolute;
+  bottom: 6px;
+  left: 0;
+  width: 100%;
+  height: 12px;
+  background-color: #f4a261;
+  z-index: -1;
+  border-radius: 3px;
+}
+
+hr {
+  border-top: 1px dotted #000;
+}
+
+.btn-submit {
+  background-color: #d3542b;
+  color: white;
+  border: none;
+  transition: 0.3s ease;
+  border-radius: 6px;
+}
+
+.btn-submit:hover {
+  background-color: #b34321;
+}
