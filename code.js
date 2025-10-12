@@ -40,7 +40,7 @@ function displayBookmarks() {
   for (var i = 0; i < bookmarks.length; i++) {
     tableHTML += `
       <tr>
-        <td>${i + 1}</td>
+        <td>${i + 1} </td>
         <td>${bookmarks[i].name}</td>
         <td>
           <button class="btn btn-primary btn-sm" onclick="viewBookmark(${i})">View</button>
