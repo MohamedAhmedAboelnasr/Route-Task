@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <meta charset="utf-8" />
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/all.min.css">
   <link rel="stylesheet" href="stylesheet.css">
-    <title>Document</title>
+  <title>Bookmarker</title>
 </head>
 <body>
 
@@ -20,22 +20,26 @@
     </p>
 
     <div class="text-start mx-auto" style="max-width: 900px;">
-      <div class="mb-4">
+      <div class="mb-3">
         <label class="form-label fw-semibold">
           <i class="bi bi-journal-bookmark me-2"></i> Site Name
         </label>
-        <input type="text" id="siteName" class="form-control" placeholder="Bookmark Name" required>
+        <input type="text" id="siteName" class="form-control" placeholder="Bookmark Name"
+               oninput="validateInput(this)">
       </div>
 
-      <div class="mb-4">
+      <div class="mb-3">
         <label class="form-label fw-semibold">
           <i class="bi bi-link-45deg me-2"></i> Site URL
         </label>
-        <input type="text" id="siteURL" class="form-control" placeholder="Website URL" required>
+        <input type="text" id="siteURL" class="form-control" placeholder="Website URL"
+               oninput="validateInput(this)">
       </div>
 
       <div class="text-center">
-        <button onclick="addBookmark()" class="btn btn-submit px-5 py-2 fw-semibold">Submit</button>
+        <button id="btn" onclick="addBookmark()" class="btn btn-submit px-5 py-2 fw-semibold" disabled>
+          Submit
+        </button>
       </div>
     </div>
 
