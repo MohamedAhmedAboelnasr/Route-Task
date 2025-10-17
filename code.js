@@ -9,7 +9,7 @@ var regex = {
     isValid: false
   },
   siteURL: {
-    value: /^www\.[a-zA-Z0-9\-]+\.[a-z]{2,}$/,
+    value: /^www\.[a-zA-Z0-9-]+(\.[a-z]{2,})+$/,
     isValid: false
   }
 };
